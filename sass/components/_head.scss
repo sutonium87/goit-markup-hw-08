@@ -1,0 +1,84 @@
+.head {
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Hero-M-X1.jpg");
+  background-size: cover;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    gap: 30px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: var(--brand-letter-spacing);
+    text-transform: uppercase;
+    color: var(--brand-color-white);
+    width: 360px;
+  }
+  &__application-button {
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__application-button:hover,
+  &__application-button:focus {
+    color: var(--brand-color-blue);
+    background-color: var(--brand-color-white);
+  }
+}
+@media (min-width: 768px) {
+  .head {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/Hero-T-X1.jpg");
+    background-size: cover;
+  }
+}
+@media (min-width: 1200px) {
+  .head {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/Hero-D-X1.jpg");
+    background-size: cover;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .head {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/Hero-M-X2.jpg");
+    background-size: cover;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .head {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/Hero-T-X2.jpg");
+    background-size: cover;
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2dppx) and (min-width: 1200px) {
+  .head {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url("../images/Hero-D-X2.jpg");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+ .head__title{
+  font-size: 44px;
+  line-height: 1.363;
+  width: 696px;
+ }
+}

@@ -1,0 +1,141 @@
+.basement {
+  background: var(--brand-color-gray);
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 15px;
+  }
+  &__info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+  }
+  &__address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  &__form-email {
+    width: 450px;
+  }
+  &__address {
+    font-style: inherit;
+  }
+  &__address-location {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-white);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__address-telecommunication {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: rgba(255 255 255 / 0.6);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__social-title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--brand-color-white);
+  }
+  &__form-title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--brand-color-white);
+  }
+  &__form-email {
+    padding: 15px 0px;
+    padding-left: 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    line-height: 1.25;
+    color: var(--brand-color-white);
+  }
+  &__form-email::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.25;
+  }
+  &__application-button {
+    gap: 25px;
+    padding-left: 43px;
+  }
+  &__form-email:focus {
+    outline: none;
+  }
+}
+.social-links__icon--basement {
+  fill: var(--brand-color-white);
+}
+@media screen and (min-width: 768px) {
+  .basement {
+    &__info-container {
+      flex-direction: row;
+      gap: 165px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 94px;
+      padding: 60px 0px;
+    }
+    &__info-container {
+      flex-direction: row;
+      gap: 94px;
+    }
+    &__left-side {
+      align-items: flex-start;
+    }
+    &__address-container {
+      align-items: flex-start;
+    }
+    &__social {
+      align-items: flex-start;
+    }
+    &__form-container {
+      align-items: flex-start;
+    }
+    &__form {
+      flex-direction: row;
+    }
+    &__form-email {
+      width: 358px;
+    }
+  }
+}

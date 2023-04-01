@@ -1,0 +1,125 @@
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+body {
+  background-color: var(--brand-color-white);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  color: var(--brand-color-gray-light);
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+img {
+  display: block;
+}
+.container {
+  margin: 0px auto;
+  width: 480px;
+  padding: 0 15px;
+}
+@media screen and (min-width:768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width:1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.section {
+  padding-bottom: 60px;
+}
+.section__title {
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-titles);
+  margin-bottom: 30px;
+}
+.grid {
+  display: flex;
+  gap: 30px;
+  &__item {
+    list-style: none;
+  }
+}
+.social-links {
+  display: flex;
+  gap: 10px;
+  width: 206px;
+  &__item {
+    color: var(--brand-icon-color);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:hover {
+    background-color: var(--brand-color-blue);
+    color: var(--brand-color-white);
+    cursor: pointer;
+  }
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-blue);
+  text-decoration: none;
+  &__studio {
+    color: var(--brand-color-white);
+  }
+}
+.application-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: var(--brand-letter-spacing);
+  color: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+  box-shadow: 0 4px 4px rgba(0 0 0 / 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.top__navigation-option:hover,
+.top__navigation-option:focus,
+.top__right-link:hover,
+.top__right-link:focus,
+.basement__address-telecommunication:hover,
+.basement__address-telecommunication:focus,
+.customers__item:hover,
+.basement__address-location:hover {
+  color: var(--brand-color-blue);
+  border-color: inherit;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .section__title{
+  font-size: 36px;
+  line-height: 1.166;
+  }
+ }
+

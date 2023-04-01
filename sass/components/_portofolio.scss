@@ -1,0 +1,90 @@
+.portofolio {
+  &__filtering-container {
+    padding: 94px 327px 50px 327px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__filtering-button {
+    font-family: inherit;
+    font-weight: var(--brand-font-weight);
+    font-size: inherit;
+    letter-spacing: inherit;
+    line-height: 1.625;
+    text-align: center;
+    color: var(--brand-color-titles);
+    background-color: var(--brand-color-ghost);
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__projects-item {
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    border: 1px solid var(--brand-color-whisper);
+    list-style: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__project-name-category-container {
+    height: 110px;
+  }
+  &__project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: var(--brand-letter-spacing);
+    color: var(--brand-color-titles);
+    padding: 20px 24px 4px;
+  }
+  &__project-category {
+    line-height: 1.875;
+    padding: 0px 24px 20px;
+  }
+  &__projects-item-container {
+    height: 294px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__projects-overlay {
+    height: 294px;
+    position: absolute;
+    width: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__projects-overlay-text {
+    width: 322px;
+    font-size: 18px;
+    line-height: 1.556;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-white);
+    margin: 63px 24px 91px 24px;
+  }
+  &__filtering-button:hover,
+  &__filtering-button:focus {
+    color: var(--brand-color-white);
+    background-color: var(--brand-color-blue);
+    box-shadow: 0 3px 1px rgba(0 0 0 / 0.1), 0 1px 2px rgba(0 0 0 / 0.08),
+      0 2px 2px rgba(0 0 0 / 0.12);
+    cursor: pointer;
+  }
+  &__projects-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &__projects-item:hover &__projects-overlay {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,116 @@
+.top {
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  &__left {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    align-items: center;
+  }
+  &__navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+  }
+  &__navigation-item {
+    position: relative;
+  }
+  &__navigation-option::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: var(--brand-color-blue);
+    position: absolute;
+    bottom: -32px;
+    border-radius: 2px;
+    visibility: hidden;
+    left: 0;
+  }
+  &__navigation-option {
+    font-weight: var(--brand-font-weight);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-titles);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__right-link {
+    font-weight: var(--brand-font-weight);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: inherit;
+    line-height: 1.16;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.active::after {
+  visibility: visible;
+}
+.logo__studio--top {
+  color: var(--brand-color-black);
+}
+
+.top__navigation-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 8px;
+}
+.top__navigation-option--mobile {
+  font-size: 40px;
+  line-height: 1.175;
+}
+.top__right-mobile {
+  position: absolute;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 32px;
+  bottom: 134px;
+}
+.top__right-link--mobile-email {
+  font-size: 24px;
+  line-height: 1.16;
+}
+.top__right-link--mobile-phone {
+  font-size: 34px;
+  line-height: 1.176;
+  color: var(--brand-color-blue);
+}
+.top__right-link--mobile-email:hover,
+.top__right-link--mobile-email:focus {
+  color: inherit;
+}
+@media screen and (min-width: 768px) {
+  .top__container{
+    height: 80px;
+  }
+  .top__right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .top__container{
+    height: 80px;
+  }
+  .top__right {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .top__right-link{
+    font-size: 14px;
+    line-height: 1.16;
+  }
+}
